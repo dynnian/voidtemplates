@@ -1,0 +1,20 @@
+# Template file for 'passgen'
+pkgname=passgen
+version=0.1
+revision=1
+build_style=gnu-makefile
+hostmakedepends="pkg-config"
+short_desc="Generate passwords with ease"
+maintainer="Lian Drake <d4r1us-drk@proton.me>"
+license="GPLv3"
+homepage="https://forge.lianslair.com/drake/passgen"
+distfiles="${homepage}/archive/${pkgname}-${version}.tar.gz"
+checksum=42e1fb7d4287cab1783577a7747c244655c93eca8c5264df99f68fc3ff59e16a
+
+make_build_args="PREFIX=/usr"
+make_install_args="PREFIX=/usr"
+
+do_install() {
+    make install DESTDIR=$DESTDIR PREFIX=/usr
+    vlicense LICENSE
+}
