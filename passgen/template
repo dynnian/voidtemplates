@@ -8,7 +8,7 @@ short_desc="Generate passwords with ease"
 maintainer="Lian Drake <d4r1us-drk@proton.me>"
 license="GPLv3"
 homepage="https://forge.lianslair.com/drake/passgen"
-distfiles="${homepage}/archive/${pkgname}-${version}.tar.gz"
+distfiles="${homepage}/archive/${version}.tar.gz"
 checksum=42e1fb7d4287cab1783577a7747c244655c93eca8c5264df99f68fc3ff59e16a
 
 make_build_args="PREFIX=/usr"
