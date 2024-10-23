@@ -9,7 +9,7 @@ maintainer="Lian Drake <d4r1us-drk@proton.me>"
 license="GPLv3"
 homepage="https://forge.lianslair.com/drake/passgen"
 distfiles="${homepage}/archive/${version}.tar.gz"
-checksum=42e1fb7d4287cab1783577a7747c244655c93eca8c5264df99f68fc3ff59e16a
+checksum=64a5985e7617c46cbc475af70582b175a43300df6a0216d3b0197b9135f24c92
 
 make_build_args="PREFIX=/usr"
 make_install_args="PREFIX=/usr"
