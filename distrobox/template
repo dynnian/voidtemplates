@@ -1,13 +1,13 @@
 # Template file for 'distrobox'
 pkgname=distrobox
-version=1.8.0
+version=1.8.1.2
 revision=1
 short_desc="Use any linux distribution inside your terminal"
 maintainer="Libera <libera@disroot.org>"
 license="GPL-3.0-or-later"
 homepage="https://distrobox.it/"
 distfiles="https://github.com/89luca89/distrobox/archive/${version}.tar.gz"
-checksum=72d8d825b6aad63e03e0b92376e6ead9c053c1e676acab3c7eaac9be2929d0a2
+checksum=3ecbce9b8c5b5df941f986798ffa6ea7fdf742223d42204207974c4323d5b9fc
 
 do_install() {
 	./install --prefix "${DESTDIR}/usr"

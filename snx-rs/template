@@ -1,0 +1,23 @@
+# Template file for 'snx-rs'
+pkgname=snx-rs
+version=4.8.3
+revision=1
+build_style=cargo
+hostmakedepends="pkg-config"
+makedepends="openssl-devel gtk4-devel"
+depends="gtk4"
+maintainer="Lian Dynn"
+homepage="https://github.com/ancwrd1/snx-rs"
+license="AGPL-3.0-only"
+short_desc="Checkpoint SNX client in Rust"
+distfiles="${homepage}/archive/refs/tags/v${version}.tar.gz"
+checksum="223c0b3efdf435bf44fcd74cd21d9a5ad8231417f119d092cbc67d4f0ab87225"
+
+do_install() {
+    vbin target/${RUST_TARGET}/release/snx-rs
+    vbin target/${RUST_TARGET}/release/snxctl
+    vbin target/${RUST_TARGET}/release/snx-rs-gui
+    vinstall package/snx-rs-gui.desktop 644 /usr/share/applications
+    vlicense COPYING
+    vsv snx-rs
+}
